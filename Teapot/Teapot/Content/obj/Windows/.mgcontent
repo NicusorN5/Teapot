@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Font.spritefont</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Lab/Labs.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Lab/Labs_col.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Lab/room_ill1.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Lab/Stairs.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Lab/stairs_col2.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Brick_Antique.jpg</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Level1.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Level1Collision.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Wood 01.jpg</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Wood_Floor_Dark.jpg</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Objects/Cup.x</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Objects/Teapot.fbx</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Shaders/SeparationPlaneRenderer.fx</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Shaders/Skybox.fx</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/NegativeX.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/NegativeY.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/NegativeZ.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/PositiveX.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/PositiveY.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/PositiveZ.png</File>
+    <File>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Skybox/Skybox.x</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

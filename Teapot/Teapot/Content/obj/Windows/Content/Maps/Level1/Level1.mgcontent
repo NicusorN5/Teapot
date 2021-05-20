@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/Maps/Level1/Level1.x</SourceFile>
+  <SourceTime>2021-04-28T19:09:19.5657771+03:00</SourceTime>
+  <DestFile>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/bin/Windows/Content/Maps/Level1/Level1.xnb</DestFile>
+  <DestTime>2021-04-28T19:10:05.5091259+03:00</DestTime>
+  <Importer>XImporter</Importer>
+  <ImporterTime>2020-08-11T02:17:54+03:00</ImporterTime>
+  <Processor>ModelProcessor</Processor>
+  <ProcessorTime>2020-08-11T02:17:54+03:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>0,0,0,0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>DefaultEffect</Key>
+    <Value>BasicEffect</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateTangentFrames</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>PremultiplyTextureAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>PremultiplyVertexColors</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ResizeTexturesToPowerOfTwo</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>RotationX</Key>
+    <Value>0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>RotationY</Key>
+    <Value>0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>RotationZ</Key>
+    <Value>0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>Scale</Key>
+    <Value>1</Value>
+  </Parameters>
+  <Parameters>
+    <Key>SwapWindingOrder</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>NoChange</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset>
+    <string>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/bin/Windows/Content/Maps/Level1/Brick_Antique_0.xnb</string>
+    <string>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/bin/Windows/Content/Maps/Level1/Wood 01_0.xnb</string>
+    <string>C:/Users/NicusorN5/Desktop/Teapot/Teapot/Teapot/Content/bin/Windows/Content/Maps/Level1/Wood_Floor_Dark_0.xnb</string>
+  </BuildAsset>
+  <BuildOutput />
+</PipelineBuildEvent>

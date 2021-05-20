@@ -1,0 +1,2170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lib3DRadSpace_DX</name>
+    </assembly>
+    <members>
+        <member name="T:Lib3DRadSpace_DX.Shaders.BasicColorShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.BasicColorShader.ModelColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.BasicColorShader._eff">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Shaders.BasicColorShader.ShaderEffect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.BasicColorShader.DrawModelPart(Microsoft.Xna.Framework.Graphics.ModelMeshPart,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            
+            </summary>
+            <param name="part"></param>
+            <param name="world"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.BasicColorShader.LoadShader(Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.GraphicsDevice)">
+            <summary>
+            Internal use.
+            </summary>
+            <param name="content"></param>
+            <param name="dev"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Shaders.IShader">
+            <summary>
+            Represents the base type for Skinmesh shaders.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.IShader.LoadShader(Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.GraphicsDevice)">
+            <summary>
+            Loads the shader's code.
+            </summary>
+            <param name="content">Content pipeline</param>
+            <param name="dev">ID3D11Device used to initialize the shader effects</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.IShader.DrawModelPart(Microsoft.Xna.Framework.Graphics.ModelMeshPart,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            Draw a shaded mesh
+            </summary>
+            <param name="part">Mesh to be drawn</param>
+            <param name="world">World matrix</param>
+            <param name="view">View matrix</param>
+            <param name="projection">Projection matrix</param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Shaders.IShader.ShaderEffect">
+            <summary>
+            Gets the shader.
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Shaders.SkyboxShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Shaders.SkyboxShader.ShaderEffect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.SkyboxShader.SkyboxTexure">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.SkyboxShader.FlipOffsetX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.SkyboxShader.FlipOffsetY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.SkyboxShader.DrawModelPart(Microsoft.Xna.Framework.Graphics.ModelMeshPart,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            
+            </summary>
+            <param name="part"></param>
+            <param name="world"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.SkyboxShader.LoadShader(Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.GraphicsDevice)">
+            <summary>
+            B
+            </summary>
+            <param name="content"></param>
+            <param name="dev"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Shaders.TexturedMeshShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Shaders.TexturedMeshShader.ShaderEffect">
+            <summary>
+            Gets the effect itself.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Shaders.TexturedMeshShader.Texture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.TexturedMeshShader.DrawModelPart(Microsoft.Xna.Framework.Graphics.ModelMeshPart,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+            <summary>
+            Draws a model part with a specified texture.
+            </summary>
+            <param name="part"></param>
+            <param name="world"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Shaders.TexturedMeshShader.LoadShader(Microsoft.Xna.Framework.Content.ContentManager,Microsoft.Xna.Framework.Graphics.GraphicsDevice)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+            <param name="dev"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.BehiavourStruct">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BehiavourStruct.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="beh"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BehiavourStruct.ObjectID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BehiavourStruct.Behiavour">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BehiavourStruct.ToString">
+            <summary>
+            Returns a string representation used in UI.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BehiavourStruct.ToString(System.Func{System.Int32,System.String})">
+            <summary>
+            Returns a string representation used in UI.
+            </summary>
+            <param name="f">Function containing a switch-case for all the Behiavour ID names.</param>
+            <returns>A string designed for UI interfaces.</returns>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Camera">
+            <summary>
+            Allows drawing of 3D objects. Practically a container for some Matrix structs.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.#ctor(System.String,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+            Camera object constructor.
+            </summary>
+            <param name="name">Object name.</param>
+            <param name="enabled">Checks if the camera will affect the drawing matrices.</param>
+            <param name="pos">Camera position.</param>
+            <param name="rot">Camera rotation quaternion.</param>
+            <param name="up">Camera up direction. A normalized vector perpendicular to the surface the camera is standing on.</param>
+            <param name="fov">FOV in radians. Default is ~65.</param>
+            <param name="npd">Near plane distance.</param>
+            <param name="fpd">Far plane distance.</param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.Position">
+            <summary>
+            Represents the Camera's position in the world space.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Camera.Up">
+            <summary>
+            Camera up director. A normalized vector perpendicular to the surface the camera is standing on.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Camera.FOV">
+            <summary>
+            Field of view in radians.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.NearPlaneDistance">
+            <summary>
+            Minimum drawing distance.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.FarPlaneDistance">
+            <summary>
+            Maximum drawing distance.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Camera.LookAtLocation">
+            <summary>
+            Makes the camera object look at a specific point rather than using a rotation.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.Target">
+            <summary>
+            Camera look-at position.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.View">
+            <summary>
+            Camera View Matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.Projection">
+            <summary>
+            Camera projection Matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.CameraFrustum">
+            <summary>
+            Bounding frustrum generated by the camera object.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Affects the drawing matrices.
+            </summary>
+            <param name="time">Not used.</param>
+            <param name="frustrum">Not used.</param>
+            <param name="view">Output value.</param>
+            <param name="projection">Output value.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.RayIntersection(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the camera marker.
+            </summary>
+            <param name="time">dt</param>
+            <param name="frustrum">view frustrum</param>
+            <param name="view">view matrix</param>
+            <param name="projection">projection matrix</param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Camera.CameraModel">
+            <summary>
+            Editor only. Represents the Camera marker model.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Camera.World">
+            <summary>
+            Represents the translation matrix.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            Function used inside the file I/O system.
+            </summary>
+            <param name="buff">Byte buffer</param>
+            <param name="position">Byte position</param>
+            <param name="result">Resulting Camera Object</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Camera.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            Function used inside the file I/O system
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Counter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.#ctor(System.String,System.Boolean,System.Single,System.Single,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="val"></param>
+            <param name="inc"></param>
+            <param name="filename"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Counter.Value">
+            <summary>
+            Counter value.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Counter.Increment">
+            <summary>
+            Counter increment value.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Counter.SaveToDrive">
+            <summary>
+            If the object will save/load the number in a file if the project is being unloaded or loaded.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.Trigger">
+            <summary>
+            'Triggers' the object. Used in the visual scripting interface.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Counter.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.SaveData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.LoadData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the counter value.
+            </summary>
+            <param name="content">unused</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.Unload">
+            <summary>
+            Saves the counter value into a file.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Counter.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.CurrentProject">
+            <summary>
+            Contains settings and the objects that are in the currently loaded project.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.CurrentProject.GameObjects">
+            <summary>
+            A list containing the game objects.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.Open(System.String)">
+            <summary>
+            Opens a project, resetting the gameobject's content.
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.Add(System.String)">
+            <summary>
+            Opens a project, concatenating the current project with the opened project.
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.Save(System.String)">
+            <summary>
+            Saves the current project into a file.
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.CurrentProject.Resolution">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.CurrentProject.GraphicsDevice">
+            <summary>
+            Contains a reference to the current ID3D11GraphicsDevice + ID3D11DeviceContext.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.CurrentProject.SkyboxShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.CurrentProject.BasicColorShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.CurrentProject.TexturedMeshShader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.FindObjectByName(System.String)">
+            <summary>
+            Returns the first object that matches the exact name specified.
+            Returns null if there isn't any object that has the exact Name as the specified parameter.
+            </summary>
+            <param name="filename">Specified name.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.FindObjectsByName(System.String)">
+            <summary>
+            Returns a collection of objects that share the the specified name.
+            Notice: Use the FindObjectsByName(string name,int capacity) for a more GC-friendly approach.
+            </summary>
+            <param name="filename">Specified name.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.FindObjectsByName(System.String,System.Int32)">
+            <summary>
+            Returns a collection of objects that share the the specified name.
+            Notice: Use the FindObjectsByName(string name,int capacity) for a more GC-friendly approach.
+            </summary>
+            <param name="filename">Specified name.</param>
+            <param name="capacity">Number of objects that are going potentially going to be returned.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.CurrentProject.FindObjectByID(System.Int32)">
+            <summary>
+            Returns the object with the specified ID.
+            This is a shorter way of writing CurrentProject.GameObjects[id];
+            Notice: This doesn't check the bounds of the object list.
+            </summary>
+            <param name="filename">Specified identifier.</param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.DynamicRigidBody">
+            <summary>
+            Represents a solid shape approximated with primitive objects like cubes and spheres.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.DynamicRigidBody.#ctor(System.String,System.Boolean,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Lib3DRadSpace_DX.Physics.PhysicsPrimitive[])">
+            <summary>
+            Represents the main dynamic rigidbody constructor.
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="visible"></param>
+            <param name="pos"></param>
+            <param name="rot"></param>
+            <param name="scal"></param>
+            <param name="primitives"></param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.DynamicRigidBody.Enabled">
+            <summary>
+            Toggles physics of this object.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.DynamicRigidBody.PhysicsInitialize(BEPUphysics.Space)">
+            <summary>
+            Adds the primitives into the physics simulation.
+            </summary>
+            <param name="space"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.DynamicRigidBody.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the collision primitives with a transparent red color.
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.DynamicRigidBody.ApplyForce(Microsoft.Xna.Framework.Vector3,Lib3DRadSpace_DX.Physics.ForceType,System.Single)">
+            <summary>
+            Applies a force to the body.
+            </summary>
+            <param name="dir">Force direction. A normalized vector.</param>
+            <param name="t">The force type.</param>
+            <param name="intensity">Force intensity</param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.EmptyGameObject">
+            <summary>
+            BaseGameObject but with a implementation of SaveF(...) and LoadF(...)
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.EmptyGameObject.#ctor(System.String,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="pos"></param>
+            <param name="rot"></param>
+            <param name="s"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.EmptyGameObject.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.EmptyGameObject.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            Saves the data into a file
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.FirstPersonCamera">
+            <summary>
+            A class representing a first person camera allowing looking around and moving on the map, jumping, crouching, and staying prone.
+            This class is not inhereted from the Camera object, because levels of inheritance will slow down the performance of the game project.
+            The OOP nature of 3DRadSpace + the fact that 3DRadSpace is bulid from Monogame instead of pure DirectX 11/12 or OpenGL are already big enough slowdowns.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.#ctor(System.String,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys,Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            FirstPersonCamera constructor. Provides all the necessary initialization arguments.
+            </summary>
+            <param name="name">Name of the object</param>
+            <param name="enabled">Checks if the object will do physics + rendering logic (setting the view and projection matrices)</param>
+            <param name="pos">Location in the 3D coordinates</param>
+            <param name="look">A normalized vector defining the characters's direction.</param>
+            <param name="norm">Camera's UP direction.</param>
+            <param name="npd">Minimum render frustrum distance.</param>
+            <param name="fpd">Maximum render frustrum distance.</param>
+            <param name="speed">Base movment speed</param>
+            <param name="sensitivity">Mouse sensitivity</param>
+            <param name="height">Defines the character's height</param>
+            <param name="crouchingHeight">Defines the camera height at the crouching stance</param>
+            <param name="proneHeight">Defines the camera height at the prone stance</param>
+            <param name="crouchingspeed">Defines the movment speed in the crouching stance</param>
+            <param name="pronespeed">Defines the movement speed in the prone stance</param>
+            <param name="runningspeed">Defines the running speed.</param>
+            <param name="mass">Defines the mass of the character's body</param>
+            <param name="backward">Keyboard key defining the backward movement</param>
+            <param name="forward">Keyboard key defining the forward movement</param>
+            <param name="left">Keyboard key defining the left movement</param>
+            <param name="right">Keyboard key defining the rights movement</param>
+            <param name="crouch">Chrouching key</param>
+            <param name="sprint">Sprinting key</param>
+            <param name="prone">Sprinting key</param>
+            <param name="fov">Field of view in radians. Default value is ~65 degrees.</param>
+            <param name="jmp">Jumping key</param>
+            <param name="jumpingheight">Jumping height</param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.Position">
+            <summary>
+            Gets or sets the position of the character.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Look_At">
+            <summary>
+            Contains the rotation degrees given by the input.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.LookDir">
+            <summary>
+            Represents the camera's rotation in a unit vector.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Normal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.NearPlaneDistance">
+            <summary>
+            Minimum drawing distance.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.FarPlaneDistance">
+            <summary>
+            Maximum drawing distance.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.MovmentSpeed">
+            <summary>
+            Character movement speed.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.CrouchingSpeed">
+            <summary>
+            Gets or sets the crouching speed.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.ProneSpeed">
+            <summary>
+            Gets or sets the prone movement speed.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.SprintSpeed">
+            <summary>
+            Character running speed.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Sensitivity">
+            <summary>
+            Represents mouse->character rotation movment speed.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.CrouchingHeight">
+            <summary>
+            Represents the camera height when crouching.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.ProneHeight">
+            <summary>
+            represents the camera height when staying in a prone position.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.Stance">
+            <summary>
+            Represents the stances of the character.
+            Other values can represent custom stances, like crouching + peeking a wall (like in Insurgency)
+            Since this is a byte, a total of 255 stances can be implemented.
+            Default values are:
+            0 - Default
+            1 - Crouching
+            2 - Prone
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.FOV">
+            <summary>
+            Represents the camera's field of view (FoV) in radians.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.Mass">
+            <summary>
+            Defines the mass of the character's body.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.JumpingHeight">
+            <summary>
+            Gets or sets the jumping height
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Forward">
+            <summary>
+            Defines the forward movment key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Backwards">
+            <summary>
+            Defines the backward movment key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Left">
+            <summary>
+            Defines the left movment key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Right">
+            <summary>
+            Defines the right movment key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Jump">
+            <summary>
+            Defines the jump key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Crouch">
+            <summary>
+            Defines the crouch key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Prone">
+            <summary>
+            Defines the prone key.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.FirstPersonCamera.Key_Sprint">
+            <summary>
+            Defines the sprinting key.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.View">
+            <summary>
+            Represents the generated view matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.Projection">
+            <summary>
+            Represents the generated projection matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.FirstPersonCamera.CameraFrustum">
+            <summary>
+            Represents the camera frustum generated by the view and projection matrices.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.PhysicsInitialize(BEPUphysics.Space)">
+            <summary>
+            Enabled physics of the Camera object.
+            </summary>
+            <param name="space"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Updates the matrices used when drawing 3D elements.
+            </summary>
+            <param name="time">DT value</param>
+            <param name="frustrum">Not used.</param>
+            <param name="view">Output value</param>
+            <param name="projection">Output value.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Handles the camera rotation by taking the mouse as input.
+            </summary>
+            <param name="input"></param>
+            <param name="keyboard"></param>
+            <param name="time"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.RayIntersection(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            Checks if (an approximation of the hitbox) intersects the given ray
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.FirstPersonCamera.ApplyForce(Microsoft.Xna.Framework.Vector3,Lib3DRadSpace_DX.Physics.ForceType,System.Single)">
+            <summary>
+            Applies a force to the character's body.
+            </summary>
+            <param name="dir">Force direction vector</param>
+            <param name="t">Force type.</param>
+            <param name="intensity">Force impulse vector length</param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Fog">
+            <summary>
+            Representsa Fog effect that can be used on Skinmesh objects.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Fog.#ctor(System.String,System.Boolean,Microsoft.Xna.Framework.Color,System.Single,System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="visible"></param>
+            <param name="fogcolor"></param>
+            <param name="fogstart"></param>
+            <param name="fogend"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Fog.FogColor">
+            <summary>
+            Describes the fog colour in a RGB format.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Fog.FogStart">
+            <summary>
+            Represents the fog gradient start distance.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Fog.FogEnd">
+            <summary>
+            Represents the fog gradient end distance.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Fog.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Fog.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Physics.ForceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.ForceType.Undefined">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.ForceType.Acceleration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.ForceType.Spin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Physics.PhysicsPrimitive">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.PhysicsPrimitive.Type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.PhysicsPrimitive.Coordinates">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Physics.PhysicsPrimitive.#ctor(Microsoft.Xna.Framework.BoundingSphere)">
+            <summary>
+            
+            </summary>
+            <param name="sph"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Physics.PhysicsPrimitive.#ctor(Microsoft.Xna.Framework.BoundingBox)">
+            <summary>
+            
+            </summary>
+            <param name="box"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Physics.PhysicsPrimitiveType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.PhysicsPrimitiveType.Nonexistent">
+            <summary>
+            Defines nothing. Represents 0 floats.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.PhysicsPrimitiveType.Box">
+            <summary>
+            Represents a box. Uses 6 (3x2) floats.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Physics.PhysicsPrimitiveType.Sphere">
+            <summary>
+            Represents a sphere. Uses 4 floats
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Force">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.#ctor(System.String,Microsoft.Xna.Framework.Vector3,Lib3DRadSpace_DX.Physics.ForceType,System.Single,System.Single,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="direction"></param>
+            <param name="t"></param>
+            <param name="power"></param>
+            <param name="time_interval"></param>
+            <param name="objects"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Force.ForceType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Force.TimeInterval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Force.Intensity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Force.IsBeingApplied">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.Trigger">
+            <summary>
+            Activates the force.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.Trigger(System.Single)">
+            <summary>
+            Activates the force with a custom time interval.
+            </summary>
+            <param name="custom_time_interval"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <param name="keyboard"></param>
+            <param name="time"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Force.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.BaseGameObject">
+            <summary>
+            Base class for alll 'game-objects' containing common implementation of fields and functions.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.BaseGameObject.Name">
+            <summary>
+            Object name. Spaces will be removed.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Enabled">
+            <summary>
+            Checks if the object will cycle it's update loop.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Visible">
+            <summary>
+            Checks if the object is visible or not.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Position">
+            <summary>
+            Object 3D position in the game-world.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.BaseGameObject.Rotation">
+            <summary>
+            Object rotation.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.BaseGameObject.RotationEuler">
+            <summary>
+            Rotation euler 
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Scale">
+            <summary>
+            3D Scale of the object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.RotationCenter">
+            <summary>
+            Specifies the rotation center
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Asset">
+            <summary>
+            Asset file name. May differ from object to object.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.BaseGameObject.World">
+            <summary>
+            Gets the World matrix, passed to shaders as a argument.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the object.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the physics and input logic.
+            </summary>
+            <param name="input">Mouse input. Passed by reference, for the sake of optimisation.</param>
+            <param name="keyboard">Keyboard input. Passed by reference, for the sake of speed. Microptimisation :TM:</param>
+            <param name="time">dt. delta-time</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the "game-object" to the ID3D11DeviceContext
+            </summary>
+            <param name="time">dt. delta-time</param>
+            <param name="frustrum">Bounding frustrum for 3D models for GPU optimisation.</param>
+            <param name="view">View Matrix. Represents the camera's coordinates</param>
+            <param name="projection">Projection Matrix.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Debug draw. Specific to the game engine editor(s).
+            </summary>
+            <param name="time">dt. Delta Time. Except it won't be propably used.</param>
+            <param name="frustrum">Bounding frustrum allowing a specific drawing optimisation.</param>
+            <param name="view">View Matrix</param>
+            <param name="projection">Projection Matrix.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            Loads the game object from a file buffer.
+            </summary>
+            <param name="buff">file buffer</param>
+            <param name="position">Buffer position</param>
+            <param name="result">Loaded IGameObject. Null if failed.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            Saves the game object into a buffer that can be stored in a file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.Behiavours">
+            <summary>
+            List of editor selected behiavours.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Trigger">
+            <summary>
+            Triggers the object's action.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Unload">
+            <summary>
+            Unloads native resources.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.RayIntersection(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.PhysicsInitialize(BEPUphysics.Space)">
+            <summary>
+            Initializes the object's physics.
+            </summary>
+            <param name="space"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.BaseGameObject.Draw2D(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="batch"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.BaseGameObject.RunOnce">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.GameObjectType">
+            <summary>
+            Used in I/O operations when loading.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Empty">
+            <summary>
+            Represents the empty object
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Camera">
+            <summary>
+            Represents the Camera object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Script">
+            <summary>
+            Represents the Script object containing a C# class.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Skinmesh">
+            <summary>
+            Represents the Skinmesh object
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Sprite">
+            <summary>
+            Represents a 2D imagine that is drawn into the sprite-batch.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.TextPrint">
+            <summary>
+            Represents a text drawn into the screen.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GameObjectType.Skybox">
+            <summary>
+            Represents a skybox.
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.GForce">
+            <summary>
+            Represents the gravitational force vector.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GForce.GravitationalConstant">
+            <summary>
+            Defines the Gravitational constant, usually 9.81.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.GForce.Direction">
+            <summary>
+            Defines the direction of gravity.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.GForce.#ctor(System.String,System.Boolean,System.Nullable{Microsoft.Xna.Framework.Vector3},System.Single)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="dir"></param>
+            <param name="intensity"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.GForce.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws a vector representing the gravity vector at the center of the world.
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.GForce.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.GForce.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Group.#ctor(System.String,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="objects"></param>
+            <param name="pos"></param>
+            <param name="rot"></param>
+            <param name="scale"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Group.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Group.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <param name="keyboard"></param>
+            <param name="time"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.IGameObject">
+            <summary>
+            Absolute base interface for all of the "game-objects" in 3DRadSpace.
+            Specific objects will have their own specific function overloading for the Update()/Draw() functions
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the object.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.PhysicsInitialize(BEPUphysics.Space)">
+            <summary>
+            Adds the object to the physics updateables list. Internal use only.
+            </summary>
+            <param name="space"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Updates the physics and input logic.
+            </summary>
+            <param name="input">Mouse input. Passed by reference, for the sake of optimisation.</param>
+            <param name="keyboard">Keyboard input. Passed by reference, for the sake of speed. Microptimisation :TM:</param>
+            <param name="time">dt. delta-time</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the game to the ID3D11DeviceContext
+            </summary>
+            <param name="time">dt. delta-time</param>
+            <param name="frustrum">Bounding frustrum for 3D models for a culling optimisation.</param>
+            <param name="view">View Matrix</param>
+            <param name="projection">Projection Matrix.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.Draw2D(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws 2D elements into the sprite batch.
+            </summary>
+            <param name="time">dt</param>
+            <param name="batch">SpriteBatch</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Debug draw. Specific to the game engine editor(s).
+            </summary>
+            <param name="time">dt. Delta Time. Except it won't be propably used.</param>
+            <param name="frustrum">Bounding frustrum allowing a specific drawing optimisation.</param>
+            <param name="view">View Matrix</param>
+            <param name="projection">Projection Matrix.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.RayIntersection(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            Used in the editor. Can also be used when ray tracing objects.
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            Loads the game object from a file buffer.
+            </summary>
+            <param name="buff">file buffer</param>
+            <param name="position">Buffer position</param>
+            <param name="result">Loaded IGameObject. Null if failed.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            Saves the game object into a buffer that can be stored in a file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IGameObject.Unload">
+            <summary>
+            Unloads native resources when loading an other project.
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.InputHelper">
+            <summary>
+            This is used for the editor.
+            Functions are taken from the 0.0.6a bulid
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.InputHelper.GetKeyFromString(System.String)">
+            <summary>
+            Gets the key from the given string.
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.InputHelper.GetStringFromKey(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Gets a string from the given key
+            </summary>
+            <param name="arg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.IPhysicsObject">
+            <summary>
+            A object that allows forces to be applied on.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.IPhysicsObject.ApplyForce(Microsoft.Xna.Framework.Vector3,Lib3DRadSpace_DX.Physics.ForceType,System.Single)">
+            <summary>
+            Applies the specified force to the object
+            </summary>
+            <param name="dir"></param>
+            <param name="intensity"></param>
+            <param name="t"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.IRenderer">
+            <summary>
+            Represents a 3D object capable of rendering a scene.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.View">
+            <summary>
+            Gets the view matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.Projection">
+            <summary>
+            Gets the projection matrix.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.CameraFrustum">
+            <summary>
+            Gets the camera frustrum.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.NearPlaneDistance">
+            <summary>
+            Defines the minimum draw distance.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.FarPlaneDistance">
+            <summary>
+            Defines the maximum draw distance.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.IRenderer.Position">
+            <summary>
+            Determines the position of the camera in the world space.
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Maths">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Maths.MultiplyScale(Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            Scales the first vector with the second vector.
+            </summary>
+            <param name="a">First vector</param>
+            <param name="b">Second vector</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Maths.CopySign(System.Double,System.Double)">
+            <summary>
+            CopySign double floating precision implementation
+            </summary>
+            <param name="a">Magnitude number</param>
+            <param name="b">Sign number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Maths.CopySign(System.Single,System.Single)">
+            <summary>
+            CopySign float implementation
+            </summary>
+            <param name="a">Magnitude number</param>
+            <param name="b">Sign number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Maths.Sgn(System.Single)">
+            <summary>
+            Signum (sign function) implementation.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Maths.QuaternionToVector3(Microsoft.Xna.Framework.Quaternion)">
+            <summary>
+            Converts a Quaternion to a Euler angle vector with radian angles.
+            </summary>
+            <param name="q"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.MollerTrumbore.MollerTrumboreIntersection(Microsoft.Xna.Framework.Ray,Lib3DRadSpace_DX.MollerTrumbore.Triangle,System.Nullable{Microsoft.Xna.Framework.Vector3}@)">
+            <summary>
+             Ray-Triangle intersection algorithm
+             Source : https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm
+            </summary>
+            <param name="r"></param>
+            <param name="tri"></param>
+            <param name="intersectionP"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.ScriptBlocks.Opcode">
+            <summary>
+            Defines an operation code, an identifier for operations and or functions in the ScriptBlocks language.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.NOP">
+            <summary>
+            No operation.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.StartObject">
+            <summary>
+            Enables or triggers object.
+            Argument: OBJ_ID (Object index)
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.StopObject">
+            <summary>
+            Stops an object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.SwitchObject">
+            <summary>
+            Switches the on state of an object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.ShowObject">
+            <summary>
+            Makes an object visible
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.HideObject">
+            <summary>
+            Hides an object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.SwitchObjectVisibility">
+            <summary>
+            Switches the visibility of an object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.RunObjectOnce">
+            <summary>
+            Starts the object, forces an update cycle, then stops the object.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.SetPos">
+            <summary>
+            Sets object position
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.AddPos">
+            <summary>
+            Increases object position.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.SetRot">
+            <summary>
+            Sets object Euler rotation.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.AddRot">
+            <summary>
+            Increases the object's Euler rotation angles.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.SetScale">
+            <summary>
+            Sets the object's scale.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.ScriptBlocks.Opcode.AddScale">
+            <summary>
+            Increases the object's scale.
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Scripting">
+            <summary>
+            This is the class containing replicas of the old functions just like in the original 3D Rad engine.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectStart(System.Int32)">
+            <summary>
+            Starts or triggers the specified object.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectStop(System.Int32)">
+            <summary>
+            Stops the specified object from executing it's update logic loop.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectSwitch(System.Int32)">
+            <summary>
+            Switch the specified object (starts if stopped, and vice-versa). This affects the updating cycle.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectShow(System.Int32)">
+            <summary>
+            Shows the specified object by allowing it in the draw cycle.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectHide(System.Int32)">
+            <summary>
+            Hides the object, by stopping it from being draw in the drawing cycle.
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectShowHideSwitch(System.Int32)">
+            <summary>
+            Switches the object's visibility
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectReset(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectOrientation(System.Int32,Microsoft.Xna.Framework.Quaternion@)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="q"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectOrientationSet(System.Int32,Microsoft.Xna.Framework.Quaternion)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="q"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectOrientationReset(System.Int32,Microsoft.Xna.Framework.Quaternion)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="q"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectLocation(System.Int32,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="loc"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectLocationSet(System.Int32,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="pos"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectLocationReset(System.Int32,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="pos"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectPositionReset(System.Int32,Microsoft.Xna.Framework.Quaternion,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="q"></param>
+            <param name="pos"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectScaleSet(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="scale"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectScaleSet(System.Int32,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="s"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectScale(System.Int32,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="scale"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectKmh(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectVelocity(System.Int32,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="vel"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectVelocitySet(System.Int32,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="vel"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectSpin(System.Int32,Microsoft.Xna.Framework.Vector3@)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="speen"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Scripting.iObjectSpinSet(System.Int32,Microsoft.Xna.Framework.Vector3)">
+            
+        </member>
+        <member name="T:Lib3DRadSpace_DX.StaticRigidBody">
+            <summary>
+            Represents a static rigidbody generated from a mesh.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.StaticRigidBody.#ctor(System.String,System.Boolean,System.Boolean,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,System.String)">
+            <summary>
+            Represents the Rigidbody constructor.
+            </summary>
+            <param name="name"></param>
+            <param name="enabled"></param>
+            <param name="visible"></param>
+            <param name="translation"></param>
+            <param name="rotation_euler"></param>
+            <param name="initial_scale"></param>
+            <param name="modelasset"></param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.StaticRigidBody.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.StaticRigidBody.Position">
+            <summary>
+            Represents the position of the static rigidbody. CAN ONLY BE SET BEFORE INITIALIZING THE PHYSICS.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.StaticRigidBody.RotationEuler">
+            <summary>
+            Represents the rotation of the static rigidbody.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.StaticRigidBody.Scale">
+            <summary>
+            Represents the initial scale of the collision map.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.StaticRigidBody.World">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.StaticRigidBody.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.StaticRigidBody.PhysicsInitialize(BEPUphysics.Space)">
+            <summary>
+            Generates the collision mesh
+            </summary>
+            <param name="space"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.StaticRigidBody.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the collision mesh with a red transparent color.
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.StaticRigidBody.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the collision model
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Script">
+            <summary>
+            Object allowing C# scripting
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Script.MainClass">
+            <summary>
+            Name of the class that the script will execute.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Script.Compiler">
+            <summary>
+            C# Code Provider. 1 global instance used for compilation.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.#ctor(System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            Main Script object constructor.
+            </summary>
+            <param name="name">Object name.</param>
+            <param name="enabled">Checks if the script object will execute the provided script</param>
+            <param name="mainclass">Entry point class name</param>
+            <param name="code">Source code provided to the compiler.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Compile(System.String[]@)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.CompileWithoutAssembly(System.String[]@)">
+            <summary>
+            Checks the scripts for errors.
+            </summary>
+            <param name="errors">Null if there are no errors or warnings.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Executes 'MainClass'.Load(ContentManager);
+            </summary>
+            <param name="content">ContentManager argument. Used to load models, textures, fonts, etc.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Update(Microsoft.Xna.Framework.Input.MouseState@,Microsoft.Xna.Framework.Input.KeyboardState@,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Calls 'MainClass'.Update(input,keyboard,time)
+            </summary>
+            <param name="input">Mouse input</param>
+            <param name="keyboard">Keyboard input</param>
+            <param name="time">Delta Time.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Calls 'MainClass'.Draw(time,frustrum,view,projection)
+            </summary>
+            <param name="time">Delta Time.</param>
+            <param name="frustrum">Bounding Frustrum</param>
+            <param name="view">View Matrix</param>
+            <param name="projection">Projection Matrix</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Unload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Script.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Skinmesh">
+            <summary>
+            Implements a basic Mesh model that supports color textures.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.#ctor(System.String,System.Boolean,System.String,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3,Microsoft.Xna.Framework.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="name">Name of the object</param>
+            <param name="visible">Checks if the skinmesh will get rendered</param>
+            <param name="meshxnbfile">XNB resource file</param>
+            <param name="p"></param>
+            <param name="r"></param>
+            <param name="rc"></param>
+            <param name="s"></param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Skinmesh.Model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.Draw(Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the model without taking in consideration the bouding frustrum.
+            </summary>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.RayIntersection(Microsoft.Xna.Framework.Ray)">
+            <summary>
+            Checks an intersection with the Skinmesh object using a Moller Trumbore algorithm.
+            </summary>
+            <param name="ray"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.DrawMeshIndex(System.Int32,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <param name="frustrum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.DrawMeshPartIndex(System.Int32,System.Int32,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skinmesh.DrawMeshWithoutPart(System.Int32,System.Int32,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <param name="frustum"></param>
+            <param name="view"></param>
+            <param name="projection"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Skybox">
+            <summary>
+            Represents a skybox.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Skybox.Textures">
+            <summary>
+            Represents the collection of textures making up the skybox
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.#ctor(System.String,System.Boolean,System.String)">
+            <summary>
+            Skybox constructor.
+            </summary>
+            <param name="name">Object name.</param>
+            <param name="visible">Is visible?</param>
+            <param name="skyboxfile">.skybox asset containing the paths</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.FindLinkedCamera">
+            <summary>
+            Finds a camera to link the skybox object to.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.LinkCamera(Lib3DRadSpace_DX.IRenderer)">
+            <summary>
+            Links a camera to the skybox object.
+            </summary>
+            <param name="cam"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the skybox textures/
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Skybox.World">
+            <summary>
+            Gets the World matrix of this skybox, in order to match the Camera object.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Skybox.TextureBox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.Draw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the skybox.
+            </summary>
+            <param name="time">Npt used/</param>
+            <param name="frustrum">Not used. Skybox is always drawn.</param>
+            <param name="view">View matrix</param>
+            <param name="projection">Projection matrix</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.EditorDraw(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.BoundingFrustum,Microsoft.Xna.Framework.Matrix@,Microsoft.Xna.Framework.Matrix@)">
+            <summary>
+            Draws the skybox in the editor.
+            </summary>
+            <param name="time">Npt used/</param>
+            <param name="frustrum">Not used. Skybox is always drawn.</param>
+            <param name="view">View matrix</param>
+            <param name="projection">Projection matrix</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.Unload">
+            <summary>
+            Unloads the skybox from the memory.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Skybox.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.Sprite">
+            <summary>
+            Represents a image that can be drawn into the screen.
+            Supports these formats: BMP, GIF, JPG, PNG, TIFF, DSS (simple textures). May support other formats, but will nor support TGA.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.#ctor(System.String,System.Boolean,System.String,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Vector2},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>
+            Main Sprite constructor.
+            </summary>
+            <param name="name">Name tag of the object.</param>
+            <param name="visible">Checks if the object is visible.</param>
+            <param name="asset">Asset path.</param>
+            <param name="pos">Screen space position coordinate. Default is 0,0.</param>
+            <param name="rot">Rotation in radians. Default is 0,0.</param>
+            <param name="center">Center of rotation. Default is 0,0 .</param>
+            <param name="scale">Size of the sprite in screen space coordinates. Default is sx=0.1,sy=0.1</param>
+            <param name="mask">Color mask. Default is R=255,G=255,B=255,A=255</param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.Position">
+            <summary>
+            Represents the position in a [0,0] -> [1,1] coordonate system
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.Rotation">
+            <summary>
+            Represents the sprite's rotation in radians.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.RotationCenter">
+            <summary>
+            Represents the sprite's rotation center offset.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.Scale">
+            <summary>
+            Represents the Sprite's size in a [0,0]->[1,1] coordinate system.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.Texture">
+            <summary>
+            Represents the ID3D11Texture2D used by the sprite.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.Sprite.Mask">
+            <summary>
+            Represents the mask color used when drawing.
+            </summary>
+        </member>
+        <member name="P:Lib3DRadSpace_DX.Sprite.DrawingRectangle">
+            <summary>
+            Represents the rectangle containing the position and scale translations given to the sprite image.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the sprite image.
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.Draw2D(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            Draws the sprite in the 2D stage.
+            </summary>
+            <param name="time">Not used</param>
+            <param name="batch">Used for drawing the sprite.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.Hovered(Microsoft.Xna.Framework.Input.MouseState)">
+            <summary>
+            Checks if mouse is over the sprite.
+            </summary>
+            <param name="mouse">MouseInput.</param>
+            <returns>Returns true if mouse is over the sprite image, or false if otherwise.</returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.RightClicked(Microsoft.Xna.Framework.Input.MouseState)">
+            <summary>
+            Checks if the sprite image is right-clicked.
+            </summary>
+            <param name="mouse">Mouse input struct</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.LeftClicked(Microsoft.Xna.Framework.Input.MouseState)">
+            <summary>
+            Checks if the sprite image is left-clicked.
+            </summary>
+            <param name="mouse">Mouse input struct</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.Unload">
+            <summary>
+            Unloads the texture.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            Loads a Sprite object from the file buffer.
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.Sprite.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+        <member name="T:Lib3DRadSpace_DX.TextPrint">
+            <summary>
+            Represents a drawable 2D text.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.#ctor(System.String,System.Boolean,System.String,System.String,System.Int32,Microsoft.Xna.Framework.Vector2,System.Single,Microsoft.Xna.Framework.Vector2,System.Nullable{Microsoft.Xna.Framework.Vector2},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>
+            
+            </summary>
+            <param name="name">Name of the object</param>
+            <param name="visible">Checks if the font is visible</param>
+            <param name="fontpath">Path to a Font file</param>
+            <param name="text">Rendered text</param>
+            <param name="fsize">Font size in pixels</param>
+            <param name="pos">Position in screen space coordinates</param>
+            <param name="rotation">The rotation in radians</param>
+            <param name="rotationcenter">Represents the rotation center</param>
+            <param name="scale">Represents the text scale</param>
+            <param name="col">Represents the text color</param>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.Position">
+            <summary>
+            Represents the TextPrint position in the screen-space coordinates.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.Rotation">
+            <summary>
+            Represents the rotation in radians.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.RotationCenter">
+            <summary>
+            Represents the rotation center offset.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.Scale">
+            <summary>
+            Represents the text scaling.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.Text">
+            <summary>
+            Represents the text used.
+            </summary>
+        </member>
+        <member name="F:Lib3DRadSpace_DX.TextPrint.Colour">
+            <summary>
+            Represents the text color.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.Load(Microsoft.Xna.Framework.Content.ContentManager)">
+            <summary>
+            Loads the font used for drawing the string.
+            </summary>
+            <param name="content">Not used here.</param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.Draw2D(Microsoft.Xna.Framework.GameTime,Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+            <param name="batch"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.GetLenghtPx">
+            <summary>
+            Gets the string lenght and width in pixels. No scalling applied.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.Unload">
+            <summary>
+            Unloads the font.
+            </summary>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.LoadF(System.Byte[],System.Int32@,Lib3DRadSpace_DX.IGameObject@)">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+            <param name="position"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:Lib3DRadSpace_DX.TextPrint.SaveF(System.Collections.Generic.List{System.Byte})">
+            <summary>
+            
+            </summary>
+            <param name="buff"></param>
+        </member>
+    </members>
+</doc>
